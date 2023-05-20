@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#e6e6e6;
+}
+.page {
+    text-align: center;
+}
+.page .sidebar {
+    height: 200vh;
+    width: 380px;
+    background-color: #efefef;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.page .sidebar .heading h1 {
+    font-size: 48px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.page .sidebar .heading h1 span {
+    color: rgb(164, 164, 164);
+}
+.sidebar__navbar {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sidebar__navbar ul {
+    list-style-type: none;
+}
+.sidebar__navbar ul li {
+    margin-bottom: 1rem;
+}
+.sidebar__navbar ul .active a{
+    color: #000;
+}
+.sidebar__navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(164, 164, 164);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar__navbar ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(164, 164, 164);
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    width:0;
+    transition: 0.4s;
+}
+.sidebar__navbar ul li a:hover {
+    color: #000;
+}
+.sidebar__navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.sidebar__rights p {
+    color: rgb(120, 120, 120);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar__rights p span {
+    color: #ff9966;
+}
+
+.sidebar__icons a {
+    margin: 0 .3rem;
+    color:#000;
+    text-decoration: none;
+}
+
+.page .content {
+    height: 200vh;
+    margin-left: 380px;
+    margin-top: 70px;
+    padding: 0 200px;
+}
+.content .content__name p {
+    margin: 30px 0 15px;
+    font-size: 27px;
+    color: rgb(182, 182, 182);
+}
+.content .content__name h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .content__text {
+    width: 715px;
+}
+
+.content .content__text p {
+    font-size: 18px;
+    color: rgb(179, 177, 177);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.content .content__about-me a {
+    color: rgb(182, 182, 182);
+    font-size: 21px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.content .content__about-me a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(164, 164, 164);
+    height: 2.3px;
+    left: 0;
+    width: 11.7%;
+    margin-top: 29px;
+    margin-left: 860px;
+}
+
+.container {
+    margin-top: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff, 
+                      5px 5px 12px rgba(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+}
+.calculator input {
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.calculator button {
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff,
+                    5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+
+}
+.equal {
+    width: 115px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff,
+                    5px 5px 12px rgba(0, 0, 0, .16);
+}
+  
+
+  
+
+
